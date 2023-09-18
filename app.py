@@ -13,6 +13,10 @@ def index():
 
     table_name = "products_tbl"
     data = db.fetch_all_data(table_name)
+
+    comments_table_name = "comments_tbl"
+    comments_data = db.fetch_all_data(comments_table_name)
+
     return render_template('index.html', data=data)
 
 # Shop Page
